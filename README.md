@@ -22,4 +22,4 @@ to see here, move along citizen!
 
 C'est tout. Maintenant vous pouvez lancer le jeu comme d'habitude depuis **Steam** 🥳
 
-Si vous avez tout bien fait, au lancement du jeu il y a une console qui s'ouvre, et sur le menu principal il y a un message en haut à gauche `Running BeInEx - X plugins loaded` 😉
+Si vous avez tout bien fait, au lancement du jeu il y a une console qui s'ouvre, et sur le menu principal il y a un message en haut à gauche `Running BepInEx - X plugins loaded` 😉
