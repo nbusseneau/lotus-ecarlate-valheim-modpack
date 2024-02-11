@@ -27,7 +27,7 @@ jobs:
         run: |
           sed -i 's/versionNumber = ".*"/versionNumber = "${{ github.event.inputs.tag }}"/' ${{ env.config }}
 
-      - name: Push updated changelog and files to repository
+      - name: Push updated files to repository
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
