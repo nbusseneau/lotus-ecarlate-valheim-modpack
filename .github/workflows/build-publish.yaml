@@ -77,7 +77,7 @@ jobs:
 
       - name: Retrieve package name
         run: |
-          ARTIFACTS_NAME=$(find build -type f -printf "%f\n")
+          ARTIFACTS_NAME=$(find "${{ env.build-dir }}" -type f -printf "%f\n")
           echo "artifacts-name=${ARTIFACTS_NAME}" >> "$GITHUB_ENV"
 
       - name: Upload artifacts to workflow
