@@ -23,3 +23,11 @@ to see here, move along citizen!
 C'est tout. Maintenant vous pouvez lancer le jeu comme d'habitude depuis **Steam** 🥳
 
 Si vous avez tout bien fait, au lancement du jeu il y a une console qui s'ouvre, et sur le menu principal il y a un message en haut à gauche `Running BepInEx - X plugins loaded` 😉
+
+## Mise à jour
+
+- Lancer **r2modman** et choisir le profil **Default**
+  - `Select profile`
+- Mettre à jour le pack **Lotus Ecarlate**
+  - `Installed` > `Lotus Ecarlate` > `Update` > `Download with dependencies`
+  - Ne pas utiliser le `Update all` de la bannière en haut de la liste `Installed`
