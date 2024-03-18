@@ -5,7 +5,7 @@ to see here, move along citizen!
 
 ## Installation
 
-- Télécharger et installer [**r2modman**](https://valheim.thunderstore.io/package/ebkr/r2modman/)
+- Télécharger et installer [**r2modman**](https://thunderstore.io/c/valheim/p/ebkr/r2modman/)
   - `Manual Download` > extraire zip > installer via `r2modman Setup X.X.X.exe`
 - Lancer **r2modman** et sélectionner **Valheim**
   - `Valheim` > `Select game` > `Steam` > `Select platform`
