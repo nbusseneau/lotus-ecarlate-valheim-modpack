@@ -33,7 +33,7 @@ Afin d'optimiser les performances, rajouter les options de lancement suivantes s
 
 ### Configuration des mods
 
-Afin d'éviter que vos configurations locales (notamment raccourcis claviers) ne soient écrasés à chaque mise à jour du pack, une partie des configurations doit être installée manuellement :
+Afin d'éviter que vos configurations locales (notamment raccourcis claviers) ne soient écrasées à chaque mise à jour du pack, une partie des configurations doit être installée manuellement :
 
 - Accéder aux fichier du profil depuis **r2modman**
   - `Settings` > `Browse profile folder`
