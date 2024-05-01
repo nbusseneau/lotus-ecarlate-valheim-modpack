@@ -9,7 +9,7 @@ to see here, move along citizen!
   - `Manual Download` > extraire zip > installer `r2modman Setup X.X.X.exe`
 - Lancer **r2modman** et sélectionner le jeu **Valheim**
   - `Valheim` > `Select game` > `Steam` > `Select platform`
-- Sélectionner le profil **Default**
+- Sélectionner le profil **Default** (ou en créer un nouveau)
   - `Default` > `Select profile`
 - Installer le pack **Lotus Ecarlate**
   - `Online` > chercher `Lotus` > `Lotus Ecarlate` > `Download` > `Download dependencies`
@@ -31,13 +31,30 @@ Afin d'optimiser les performances, rajouter les options de lancement suivantes s
 - Clic droit sur `Valheim` dans la bibliothèque > `Propriétés` > `Options de lancement`
 - Copier/coller `-gfx-enable-gfx-jobs -gfx-enable-native-gfx-jobs`
 
+### Configuration des mods
+
+Afin d'éviter que vos configurations locales (notamment raccourcis claviers) ne soient écrasés à chaque mise à jour du pack, une partie des configurations doit être installée manuellement :
+
+- Accéder aux fichier du profil depuis **r2modman**
+  - `Settings` > `Browse profile folder`
+- Naviguer vers `BepInEx\plugins\Lotus_Ecarlate-Lotus_Ecarlate\recommendedClientConfig` et tout copier
+  - `Ctrl`+`A` > `Ctrl`+`C`
+- Revenir en arrière, naviguer vers `BepInEx\config` et tout coller
+  - `Ctrl`+`V`
+
 ### Raccourcis claviers
 
-Les mods rajoutent de nouveaux raccourcis claviers, et il y a un conflit avec les touches par défaut `W`/`X`.
+Les mods rajoutent de nouveaux raccourcis claviers, et il y a un conflit avec les touches par défaut.
 Modifier les paramètres raccourcis clavier suivants dans les paramètres du jeu :
 
-- La touche utilisée pour passer en vitesse de marche, par défaut sur `W`. Suggestion : `U`.
-- La touche utilisée pour s'asseoir, par défaut sur `X`. Suggestion : `Y`.
+- `X`, qui est par défaut la touche utilisée pour s'asseoir.
+  - Recommandé à la place : `Y`
+  - Note : avec les mods, s'asseoir a désormais une vraie utilité, pas que pour le style.
+- `W`, qui est par défaut la touche utilisée pour passer en vitesse de marche.
+  - Recommandé à la place : `U`
+  - Note : passer en vitesse de marche n'a toujours aucune utilité autre que le style.
+
+Si besoin de modifier des raccourcis claviers pour des mods, vous pouvez le faire en jeu depuis le menu accessible via `F1`.
 
 ## Mises à jour
 

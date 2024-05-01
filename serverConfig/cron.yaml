@@ -1,0 +1,46 @@
+timezone: Europe/Paris
+interval: 900
+jobs:
+  # Starting island
+  - command: chests_reset looted chance=10 pos=60,-187 min=30 max=1000 start
+    schedule: "20 6 * * *"
+
+  - command: vegetation_reset rock4_copper,mudpile_beacon terrain=30 chance=10 pos=60,-187 min=30 max=1000 start
+    schedule: "30 6 * * *"
+
+  - command: vegetation_reset MineRock_Tin,Pickable_SeedTurnip,Pickable_SeedCarrot terrain=2 chance=10 pos=60,-187 min=30 max=1000 start
+    schedule: "40 6 * * *"
+
+  - command: vegetation_reset silvervein terrain=50 chance=10 pos=60,-187 min=30 max=1000 start
+    schedule: "50 6 * * *"
+
+  - command: vegetation_reset Leviathan chance=10 pos=60,-187 min=30 max=1000 start
+    schedule: "0 7 * * *"
+
+  - command: locations_reset chance=10 pos=60,-187 min=30 max=1000 start
+    schedule: "10 7 * * *"
+
+  # Outside
+  - command: chests_reset looted chance=10 pos=60,-187 min=1000 start
+    schedule: "0 5 */4 * *"
+
+  - command: vegetation_reset rock4_copper,mudpile_beacon terrain=30 chance=10 pos=60,-187 min=1000 start
+    schedule: "10 5 */4 * *"
+
+  - command: vegetation_reset MineRock_Tin,Pickable_SeedTurnip,Pickable_SeedCarrot terrain=2 chance=10 pos=60,-187 min=1000 start
+    schedule: "20 5 */4 * *"
+
+  - command: vegetation_reset silvervein terrain=50 chance=10 pos=60,-187 min=1000 start
+    schedule: "30 5 */4 * *"
+
+  - command: vegetation_reset Leviathan chance=10 pos=60,-187 min=1000 start
+    schedule: "40 5 */4 * *"
+
+  - command: locations_reset chance=10 pos=60,-187 min=1000 start
+    schedule: "50 5 */4 * *"
+zone: []
+join: []
+logJobs: true
+logZone: true
+logJoin: true
+discordConnector: false
