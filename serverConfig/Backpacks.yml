@@ -1,0 +1,23 @@
+Backpack:
+  size: 1x1
+  weight factor: 0.5
+  unique: global
+  appearance:
+    Sleepbag: hidden
+    BackpackStrapTop: hidden
+    RingBottomLeft: hidden
+    Pot: hidden
+    Teapot: hidden
+    ToolstrapBottom: hidden
+    Knifesheath: hidden
+    Knife: hidden
+    ToolstrapTop: hidden
+    Pickaxe: hidden
+  crafting:
+    station: Workbench
+    level: 5
+    costs:
+      IronNails: 10
+      Silver: 10
+      LeatherScraps: 5
+      WolfPelt: 5
