@@ -1,7 +1,3 @@
-- Prefab: MeadHealthMinor
-  Stack: 1
-  Price: 80
-  Required Global Key: ""
 - Prefab: FishingRod
   Stack: 1
   Price: 450
@@ -10,15 +6,15 @@
   Stack: 20
   Price: 25
   Required Global Key: ""
-- Prefab: BeltStrength
-  Stack: 1
-  Price: 1150
-  Required Global Key: ""
 - Prefab: HelmetDverger
   Stack: 1
   Price: 700
   Required Global Key: ""
+- Prefab: BeltStrength
+  Stack: 1
+  Price: 1150
+  Required Global Key: ""
 - Prefab: ChickenEgg
   Stack: 1
   Price: 3000
-  Required Global Key: defeated_eikthyr
+  Required Global Key: defeated_gdking
