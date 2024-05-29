@@ -19,7 +19,7 @@ env:
   build-dir: build
   additional-config-dir: additionalClientConfig
   additional-config-artifact-name: pack_configs_additionnelles.zip
-  artifacts-content-type: application/zip
+  artifact-content-type: application/zip
 
 jobs:
   release:
