@@ -17,6 +17,8 @@ permissions:
 env:
   thunderstore-config: thunderstore.toml
   build-dir: build
+  additional-config-dir: additionalClientConfig
+  additional-config-artifact-name: pack_configs_additionnelles.zip
   artifacts-content-type: application/zip
 
 jobs:
@@ -50,11 +52,23 @@ jobs:
           echo "artifact-name=${ARTIFACT_NAME}" >> "$GITHUB_ENV"
           echo "artifact-path=${{ env.build-dir }}/${ARTIFACT_NAME}" >> "$GITHUB_ENV"
 
-      - name: Upload artifact to workflow
+      - name: Archive additional configurations
+        run: |
+          cd ${{ env.additional-config-dir }}
+          zip ../${{ env.additional-config-artifact-name }} -r .
+
+      - name: Upload artifacts to workflow
         uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
         with:
           name: ${{ env.artifact-name }}
           path: ${{ env.artifact-path }}
+          retention-days: 1
+
+      - name: Upload additional configuration pack to workflow
+        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
+        with:
+          name: ${{ env.additional-config-artifact-name }}
+          path: ${{ env.additional-config-dir }}
           retention-days: 1
 
       - name: Publish package
@@ -91,6 +105,17 @@ jobs:
           upload_url: ${{ steps.release.outputs.upload_url }}
           asset_name: ${{ env.artifact-name }}
           asset_path: ${{ env.artifact-path }}
+          asset_content_type: ${{ env.artifact-content-type }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload additional configuration pack to release
+        if: ${{ !inputs.is-dry-run }}
+        uses: actions/upload-release-asset@e8f9f06c4b078e705bd2ea027f0926603fc9b4d5
+        with:
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_name: ${{ env.additional-config-artifact-name }}
+          asset_path: ${{ env.additional-config-artifact-name }}
           asset_content_type: ${{ env.artifact-content-type }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -24,6 +24,8 @@ Il faut toujours lancer depuis **r2modman** :
 
 ## Configuration
 
+À faire une seule fois, lors de la première installation :
+
 ### Paramètres de lancement Steam
 
 Afin d'optimiser les performances, rajouter les options de lancement suivantes sur **Steam** :
@@ -31,28 +33,24 @@ Afin d'optimiser les performances, rajouter les options de lancement suivantes s
 - Clic droit sur `Valheim` dans la bibliothèque > `Propriétés` > `Options de lancement`
 - Copier/coller `-gfx-enable-gfx-jobs -gfx-enable-native-gfx-jobs`
 
-### Configuration des mods
+### Pack de configurations additionnelles
 
-Afin d'éviter que vos configurations locales (notamment raccourcis claviers) ne soient écrasées à chaque mise à jour du pack, une partie des configurations doit être installée manuellement :
+Afin d'éviter que certaines de vos configurations locales (notamment raccourcis claviers) ne soient écrasées à chaque mise à jour du pack, une partie des configurations doit être installée manuellement :
 
-- Accéder aux fichier du profil depuis **r2modman**
+- Télécharger le [**pack de configurations additionnelles** (lien cliquable)](https://github.com/nbusseneau/BetterCartographyTable/releases/latest/download/pack_configs_additionnelles.zip)
+- Accéder aux fichiers du profil depuis **r2modman**
   - `Settings` > `Browse profile folder`
-- Naviguer vers `BepInEx\plugins\Lotus_Ecarlate-Lotus_Ecarlate\recommendedClientConfig` et tout copier
-  - `Ctrl`+`A` > `Ctrl`+`C`
-- Revenir en arrière, naviguer vers `BepInEx\config` et tout coller
-  - `Ctrl`+`V`
+- Naviguer vers `BepInEx\config` et y extraire tous les fichiers du pack
 
 ### Raccourcis claviers
 
 Les mods rajoutent de nouveaux raccourcis claviers, et il y a un conflit avec les touches par défaut.
 Modifier les paramètres raccourcis clavier suivants dans les paramètres du jeu :
 
-- `X`, qui est par défaut la touche utilisée pour s'asseoir.
+- `X`, qui est par défaut la touche utilisée pour s'asseoir (avec les mods, s'asseoir a désormais une vraie utilité, pas que pour le style)
   - Recommandé à la place : `Y`
-  - Note : avec les mods, s'asseoir a désormais une vraie utilité, pas que pour le style.
-- `W`, qui est par défaut la touche utilisée pour passer en vitesse de marche.
+- `W`, qui est par défaut la touche utilisée pour passer en vitesse de marche (passer en vitesse de marche n'a toujours aucune utilité autre que le style)
   - Recommandé à la place : `U`
-  - Note : passer en vitesse de marche n'a toujours aucune utilité autre que le style.
 
 Si besoin de modifier des raccourcis claviers pour des mods, vous pouvez le faire en jeu depuis le menu accessible via `F1`.
 
@@ -60,12 +58,12 @@ Si besoin de modifier des raccourcis claviers pour des mods, vous pouvez le fair
 
 Lorsque des mises à jour sont disponibles, une bannière `Update all` s'affichera en haut de la liste des mods sur **r2modman** :
 
-- **⚠️ Ne faites pas les mises à jour des mods vous-mêmes, ne cliquez pas sur la bannière `Update all`.**
-- Si vous le faites alors que le serveur dédié n'a pas encore été mis à jour, vous risquez de ne pas pouvoir rejoindre le serveur.
+- **⚠️ Ne faites pas les mises à jour des mods vous-mêmes, ne cliquez pas sur la bannière `Update all`**
+- Si vous le faites alors que le serveur dédié n'a pas encore été mis à jour, vous risquez de ne pas pouvoir rejoindre le serveur
 
 Deux scénarios où une mise à jour sera nécessaire :
 
-- Le serveur dédié a été mis à jour et vous refuse la connexion.
+- Le serveur dédié a été mis à jour et vous refuse la connexion
 - Si j'annonce qu'une mise à jour est nécessaire... 😁
 
 Dans ces cas-là, mettez à jour **uniquement** le pack **Lotus Ecarlate** lui-même :

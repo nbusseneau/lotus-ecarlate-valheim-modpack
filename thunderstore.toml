@@ -157,9 +157,6 @@ outdir = "./build"
 source = "./config"
 target = "./config"
 
-[[build.copy]]
-source = "./recommendedClientConfig"
-target = "./recommendedClientConfig"
 
 [publish]
 repository = "https://thunderstore.io"
