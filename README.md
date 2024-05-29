@@ -37,7 +37,7 @@ Afin d'optimiser les performances, rajouter les options de lancement suivantes s
 
 Afin d'éviter que certaines de vos configurations locales (notamment raccourcis claviers) ne soient écrasées à chaque mise à jour du pack, une partie des configurations doit être installée manuellement :
 
-- Télécharger le [**pack de configurations additionnelles** (lien cliquable)](https://github.com/nbusseneau/BetterCartographyTable/releases/latest/download/pack_configs_additionnelles.zip)
+- Télécharger le [**pack de configurations additionnelles** (lien cliquable)](https://github.com/nbusseneau/lotus-ecarlate-valheim-modpack/releases/latest/download/pack_configs_additionnelles.zip)
 - Accéder aux fichiers du profil depuis **r2modman**
   - `Settings` > `Browse profile folder`
 - Naviguer vers `BepInEx\config` et y extraire tous les fichiers du pack
