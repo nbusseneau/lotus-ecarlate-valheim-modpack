@@ -54,6 +54,17 @@ Modifier les paramètres raccourcis clavier suivants dans les paramètres du jeu
 
 Si besoin de modifier des raccourcis claviers pour des mods, vous pouvez le faire en jeu depuis le menu accessible via `F1`.
 
+### Mods optionnels
+
+Ces mods ne sont pas intégrés au pack par défaut car ils sont un peu complexes à prendre en main, mais ils sont utiles pour ceux qui veulent se concentrer sur la construction :
+
+- [Gizmo](https://thunderstore.io/c/valheim/p/ComfyMods/Gizmo/)
+  - Permet de faire tourner les pièces sur n'importe quel axe et avec n'importe quel incrément (alors que de base, c'est uniquement sur l'axe Y, par incréments de 45°)
+- [Extra Snap Points Made Easy](https://thunderstore.io/c/valheim/p/Searica/Extra_Snap_Points_Made_Easy/)
+  - Rajoute des points d'accroche supplémentaires sur les pièces, par exemple au centre d'un mur (de base : uniquement dans les coins) ou sur les coffres (de base : y en a pas, les coffres ne s'accrochent jamais)
+  - Permet d'accrocher les pièces sur les points d'accroche d'une pièce déjà posée (de base : seuls les points d'accroche de la pièce en cours de pose sont utilisables)
+  - Permet d'accrocher les pièces sur une grille virtuelle pour pouvoir tout aligner tout beau tout propre, avec incrément configurable
+
 ## Mises à jour
 
 Lorsque des mises à jour sont disponibles, une bannière `Update all` s'affichera en haut de la liste des mods sur **r2modman** :
