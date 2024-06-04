@@ -1,28 +1,32 @@
 - Prefab: FishingRod
   Stack: 1
-  Price: 450
+  Price: 350
   Required Global Key: ""
 - Prefab: FishingBait
   Stack: 20
-  Price: 15
+  Price: 10
   Required Global Key: ""
 - Prefab: HelmetDverger
   Stack: 1
-  Price: 1000
+  Price: 620
   Required Global Key: ""
 - Prefab: BeltStrength
   Stack: 1
-  Price: 1550
+  Price: 950
   Required Global Key: ""
 - Prefab: YmirRemains
   Stack: 1
-  Price: 200
+  Price: 120
   Required Global Key: defeated_gdking
 - Prefab: Thunderstone
   Stack: 1
-  Price: 80
+  Price: 50
   Required Global Key: defeated_gdking
 - Prefab: ChickenEgg
   Stack: 1
-  Price: 2500
+  Price: 1500
   Required Global Key: defeated_gdking
+- Prefab: HelmetYule
+  Stack: 1
+  Price: 100
+  Required Global Key: ""
