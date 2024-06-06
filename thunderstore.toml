@@ -11,7 +11,7 @@ websiteUrl = "https://github.com/nbusseneau/lotus-ecarlate-valheim-modpack"
 containsNsfwContent = false
 
 [package.dependencies]
-Advize-PlantEasily = "1.8.0"
+Advize-PlantEasily = "1.8.1"
 Advize-PlantEverything = "1.18.0"
 ASharpPen-Fall_Damage_For_Creatures = "1.1.0"
 ASharpPen-Spawn_That = "1.2.14"
