@@ -5,7 +5,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "Lotus_Ecarlate"
 name = "Lotus_Ecarlate"
-versionNumber = "1.1.29"
+versionNumber = "1.1.30"
 description = "Custom Thunderstore modpack for Lotus Écarlate's private Valheim server. Nothing to see here, move along citizen!"
 websiteUrl = "https://github.com/nbusseneau/lotus-ecarlate-valheim-modpack"
 containsNsfwContent = false
