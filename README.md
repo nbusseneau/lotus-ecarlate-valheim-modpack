@@ -52,7 +52,7 @@ Modifier les paramètres raccourcis clavier suivants dans les paramètres du jeu
 - `W`, qui est par défaut la touche utilisée pour passer en vitesse de marche (passer en vitesse de marche n'a toujours aucune utilité autre que le style)
   - Recommandé à la place : `U`
 
-Si besoin de modifier des raccourcis claviers pour des mods, vous pouvez le faire en jeu depuis le menu accessible via `F1`.
+Si besoin de modifier des raccourcis claviers pour des mods, vous pouvez le faire en jeu depuis le menu accessible via `Échap` > `Mods settings` (ou `F1`), puis en activant uniquement le filtre `Keybinds`.
 
 ### Mods optionnels
 
