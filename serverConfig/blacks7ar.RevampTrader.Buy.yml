@@ -1,7 +1,3 @@
-- Prefab: FishingRod
-  Stack: 1
-  Price: 350
-  Required Global Key: ""
 - Prefab: FishingBait
   Stack: 20
   Price: 10
