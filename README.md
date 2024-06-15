@@ -56,7 +56,7 @@ Si besoin de modifier des raccourcis claviers pour des mods, vous pouvez le fair
 
 ### Mods optionnels
 
-Ces mods ne sont pas intégrés au pack par défaut car ils sont un peu complexes à prendre en main, mais ils sont utiles pour ceux qui veulent se concentrer sur la construction :
+Ces mods ne sont pas intégrés au pack par défaut car ils sont un peu complexes à prendre en main, mais ils peuvent être intéressants pour si vous souhaitez faire des constructions plus avancées. ⚠️ Il faudra que vous preniez le temps de changer certaines touches car il y aura des conflits avec d'autres mods du pack.
 
 - [Gizmo](https://thunderstore.io/c/valheim/p/ComfyMods/Gizmo/)
   - Permet de faire tourner les pièces sur n'importe quel axe et avec n'importe quel incrément (alors que de base, c'est uniquement sur l'axe Y, par incréments de 45°)
