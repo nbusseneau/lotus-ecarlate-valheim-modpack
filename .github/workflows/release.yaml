@@ -18,6 +18,7 @@ env:
   thunderstore-config: thunderstore.toml
   build-dir: build
   additional-config-dir: additionalClientConfig
+  bepinex-config-dir: BepInEx/config
   additional-config-artifact-name: pack_configs_additionnelles.zip
   artifact-content-type: application/zip
 
@@ -55,6 +56,8 @@ jobs:
       - name: Archive additional configurations
         run: |
           cd ${{ env.additional-config-dir }}
+          mkdir -p ${{ env.bepinex-config-dir }}
+          mv * ${{ env.bepinex-config-dir }}
           zip ../${{ env.additional-config-artifact-name }} -r .
 
       - name: Upload artifacts to workflow
