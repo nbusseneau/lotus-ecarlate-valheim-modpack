@@ -55,10 +55,9 @@ jobs:
 
       - name: Archive additional configurations
         run: |
-          cd ${{ env.additional-config-dir }}
           mkdir -p ${{ env.bepinex-config-dir }}
-          mv * ${{ env.bepinex-config-dir }}
-          zip ../${{ env.additional-config-artifact-name }} -r .
+          cp -r ${{ env.additional-config-dir }}/* ${{ env.bepinex-config-dir }}
+          zip ${{ env.additional-config-artifact-name }} -r ${{ env.bepinex-config-dir }}
 
       - name: Upload artifacts to workflow
         uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
