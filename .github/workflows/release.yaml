@@ -1,5 +1,5 @@
 name: Release
-run-name: ${{ format('{0} {1}', inputs.is-dry-run && 'Dry-run' || 'Release', inputs.tag) }}
+run-name: Release ${{ inputs.tag }}
 
 on:
   workflow_dispatch:
@@ -7,24 +7,16 @@ on:
       tag:
         description: "Tag / Version number"
         required: true
-      is-dry-run:
-        description: "Dry-run (do not publish, only test build)"
-        type: boolean
 
 permissions:
   contents: write # required for pushing to the repository and creating releases
 
 env:
   thunderstore-config: thunderstore.toml
-  build-dir: build
-  additional-config-dir: additionalClientConfig
-  bepinex-config-dir: BepInEx/config
-  additional-config-artifact-name: pack_configs_additionnelles.zip
-  artifact-content-type: application/zip
 
 jobs:
   release:
-    name: ${{ format('{0} {1}', inputs.is-dry-run && 'Dry-run' || 'Release', inputs.tag) }}
+    name: Release ${{ inputs.tag }}
     runs-on: ubuntu-latest
     steps:
       - name: Check input tag format
@@ -39,48 +31,11 @@ jobs:
         with:
           lfs: true
 
-      - name: Rotate version in Thunderstore CLI config
+      - name: Rotate version
         run: |
           sed -i 's/versionNumber = ".*"/versionNumber = "${{ inputs.tag }}"/' ${{ env.thunderstore-config }}
 
-      - name: Install Thunderstore CLI
-        run: dotnet tool install -g tcli
-
-      - name: Build package
-        run: |
-          tcli build
-          ARTIFACT_NAME=$(find "${{ env.build-dir }}" -type f -printf "%f\n")
-          echo "artifact-name=${ARTIFACT_NAME}" >> "$GITHUB_ENV"
-          echo "artifact-path=${{ env.build-dir }}/${ARTIFACT_NAME}" >> "$GITHUB_ENV"
-
-      - name: Archive additional configurations
-        run: |
-          mkdir -p ${{ env.bepinex-config-dir }}
-          cp -r ${{ env.additional-config-dir }}/* ${{ env.bepinex-config-dir }}
-          zip ${{ env.additional-config-artifact-name }} -r ${{ env.bepinex-config-dir }}
-
-      - name: Upload artifacts to workflow
-        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
-        with:
-          name: ${{ env.artifact-name }}
-          path: ${{ env.artifact-path }}
-          retention-days: 1
-
-      - name: Upload additional configuration pack to workflow
-        uses: actions/upload-artifact@65462800fd760344b1a7b4382951275a0abb4808
-        with:
-          name: ${{ env.additional-config-artifact-name }}
-          path: ${{ env.additional-config-dir }}
-          retention-days: 1
-
-      - name: Publish package
-        if: ${{ !inputs.is-dry-run }}
-        env:
-          TCLI_AUTH_TOKEN: ${{ secrets.TCLI_AUTH_TOKEN }}
-        run: tcli publish --file ${{ env.artifact-path }}
-
-      - name: Tag and push to repository
-        if: ${{ !inputs.is-dry-run }}
+      - name: Push updated files to repository
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -91,33 +46,10 @@ jobs:
 
       - name: Create release
         id: release
-        if: ${{ !inputs.is-dry-run }}
         uses: actions/create-release@0cb9c9b65d5d1901c1f53e5e66eaf4afd303e70e
         with:
           release_name: ${{ inputs.tag }}
           tag_name: ${{ inputs.tag }}
           commitish: ${{ github.ref_name }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload artifact to release
-        if: ${{ !inputs.is-dry-run }}
-        uses: actions/upload-release-asset@e8f9f06c4b078e705bd2ea027f0926603fc9b4d5
-        with:
-          upload_url: ${{ steps.release.outputs.upload_url }}
-          asset_name: ${{ env.artifact-name }}
-          asset_path: ${{ env.artifact-path }}
-          asset_content_type: ${{ env.artifact-content-type }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Upload additional configuration pack to release
-        if: ${{ !inputs.is-dry-run }}
-        uses: actions/upload-release-asset@e8f9f06c4b078e705bd2ea027f0926603fc9b4d5
-        with:
-          upload_url: ${{ steps.release.outputs.upload_url }}
-          asset_name: ${{ env.additional-config-artifact-name }}
-          asset_path: ${{ env.additional-config-artifact-name }}
-          asset_content_type: ${{ env.artifact-content-type }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
