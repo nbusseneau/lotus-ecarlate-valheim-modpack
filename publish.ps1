@@ -86,9 +86,10 @@ $bepinexDir = "build\BepInEx"
 $bepinexConfigDir = (Join-Path $bepinexDir "config")
 $archivePath = "build\pack_configs_additionnelles.zip"
 
-New-Item -ItemType Directory -Force $bepinexConfigDir
-Copy-Item -Force -Recurse "additionalClientConfig\*" $bepinexConfigDir
-Compress-Archive -Force -Path $bepinexDir -DestinationPath $archivePath
+Remove-Item -Recurse -ErrorAction Ignore -Path $bepinexDir, $archivePath
+New-Item -ItemType Directory $bepinexConfigDir
+Copy-Item -Recurse "additionalClientConfig\*" $bepinexConfigDir
+Compress-Archive -Path $bepinexDir -DestinationPath $archivePath
 
 # Upload archive to GitHub release
 $archive = (Get-ChildItem -Path $archivePath)
