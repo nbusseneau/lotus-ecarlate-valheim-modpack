@@ -64,6 +64,10 @@ Modifier les paramètres raccourcis clavier suivants dans les paramètres du jeu
 
 Si vous souhaitez modifier les raccourcis claviers utilisés pour des mods, vous pouvez le faire en jeu depuis le menu accessible via `Échap` > `Mods settings` (ou `F1`), puis en activant uniquement le filtre `Keybinds`.
 
+### Sprint toggle
+
+Si vous voulez que la touche pour sprinter (`Shift`) fonctionne comme un toggle au lieu d'un maintien de touche, changer la configuration du mod `ValheimToggleMovementMod` depuis le menu accessible via `Échap` > `Mods settings` (ou `F1`), et activer `SprintToggle`.
+
 ### Mods optionnels
 
 Ces mods ne sont pas intégrés au pack par défaut car ils sont pas forcément évidents à prendre en main, mais ils peuvent être intéressants pour faire des constructions plus avancées. Ces mods ne sont pas recommandés aux débutants ni à ceux qui n'ont pas l'intention de se concentrer sur les contructions.
