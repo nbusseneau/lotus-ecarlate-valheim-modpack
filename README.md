@@ -66,7 +66,7 @@ Si vous souhaitez modifier les raccourcis claviers utilisés pour des mods, vous
 
 ### Mods optionnels
 
-Ces mods ne sont pas intégrés au pack par défaut car ils sont complexes à prendre en main, mais ils peuvent être intéressants faire des constructions avancées et très précises. Ces mods ne sont pas recommandés aux débutants ni à ceux qui n'ont pas l'intention de se concentrer sur les contructions.
+Ces mods ne sont pas intégrés au pack par défaut car ils sont pas forcément évidents à prendre en main, mais ils peuvent être intéressants pour faire des constructions plus avancées. Ces mods ne sont pas recommandés aux débutants ni à ceux qui n'ont pas l'intention de se concentrer sur les contructions.
 
 ⚠️ Il faudra que vous preniez le temps de configurer les touches, car avec celles par défaut il y aura des conflits avec d'autres mods du pack. Des configurations avec touches compatibles sont disponibles [ici](https://github.com/nbusseneau/lotus-ecarlate-valheim-modpack/tree/main/optionalClientConfig/), à installer manuellement si vous souhaitez les essayer.
 
