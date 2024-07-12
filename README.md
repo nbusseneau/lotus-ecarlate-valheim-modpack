@@ -38,19 +38,10 @@ Afin d'optimiser les performances, rajouter les options de lancement suivantes s
 Afin d'éviter que certaines de vos configurations locales (notamment raccourcis claviers) ne soient écrasées à chaque mise à jour du pack, une partie des configurations doit être installée manuellement :
 
 - Télécharger le [**pack de configurations additionnelles** (lien cliquable)](https://github.com/nbusseneau/lotus-ecarlate-valheim-modpack/releases/latest/download/pack_configs_additionnelles.zip)
-- Accéder aux fichiers du profil depuis **r2modman**
-  - `Settings` > `Browse profile folder`
-- Extraire le contenu du pack dans le profil. À la fin, ça doit ressembler à ça :
-  ```
-  nom-profil-r2modman/
-  ├── BepInEx/
-  │   └── config/
-  │       ├── config.toto.cfg
-  │       ├── config.tata.cfg
-  │       └── ...
-  ├── mods.yml
-  └── (s'il ne s'agissait pas d'un profil vierge : il y aura également d'autres dossiers et fichiers en plus)
-  ```
+- Accéder aux fichiers du profil depuis **r2modman** avec `Settings` > `Browse profile folder`
+- Naviguer dans le dossier `BepInEx` > `config` et y extraire tous les fichiers `*.cfg` du pack (écraser / remplacer en cas de conflit avec les fichiers existants)
+
+⚠️ Tous les fichiers `*.cfg` doivent être dans `config`, pas dans un sous-dossier de `config` !
 
 ### Raccourcis claviers
 
@@ -62,7 +53,7 @@ Modifier les paramètres raccourcis clavier suivants dans les paramètres du jeu
 - `W`, qui est par défaut la touche utilisée pour passer en vitesse de marche (ça par contre ça n'a toujours aucune utilité)
   - Recommandé à la place : `U`
 
-Si vous souhaitez modifier les raccourcis claviers utilisés pour des mods, vous pouvez le faire en jeu depuis le menu accessible via `Échap` > `Mods settings` (ou `F1`), puis en activant uniquement le filtre `Keybinds`.
+Plus tard, si vous souhaitez modifier des raccourcis claviers introduits par des mods, vous pourrez le faire en jeu depuis le menu accessible via `Échap` > `Mods settings` (ou `F1`), puis en activant uniquement le filtre `Keybinds`.
 
 ### Sprint toggle
 

@@ -82,14 +82,9 @@ Write-Output "Uploading package to release | Asset name: $($package.Name)"
 Invoke-RestMethod -Method POST -ContentType "application/zip" -Uri $url -Headers $headers -InFile $package.FullName
 
 # Build additional config archive
-$bepinexDir = "build\BepInEx"
-$bepinexConfigDir = (Join-Path $bepinexDir "config")
 $archivePath = "build\pack_configs_additionnelles.zip"
-
-Remove-Item -Recurse -ErrorAction Ignore -Path $bepinexDir, $archivePath
-New-Item -ItemType Directory $bepinexConfigDir
-Copy-Item -Recurse "additionalClientConfig\*" $bepinexConfigDir
-Compress-Archive -Path $bepinexDir -DestinationPath $archivePath
+Remove-Item -ErrorAction Ignore -Path $archivePath
+Compress-Archive -Path "additionalClientConfig\*" -DestinationPath $archivePath
 
 # Upload archive to GitHub release
 $archive = (Get-ChildItem -Path $archivePath)
