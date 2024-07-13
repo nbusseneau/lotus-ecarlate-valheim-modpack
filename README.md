@@ -12,7 +12,7 @@ to see here, move along citizen!
 - Sélectionner le profil **Default** (ou en créer un nouveau)
   - `Default` > `Select profile`
 - Installer le pack **Lotus Ecarlate**
-  - `Online` > chercher `Lotus` > `Lotus Ecarlate` > `Download` > `Download dependencies`
+  - `Online` > taper `Lotus` en recherche > `Lotus Ecarlate` > `Download` > `Download dependencies`
 
 ## Lancer le jeu avec les mods
 
@@ -81,7 +81,7 @@ Lorsque des mises à jour sont disponibles, une bannière `Update all` s'affiche
 
 Les seules mises à jour à effectuer sont celles du pack **Lotus Ecarlate** lui-même :
 
-- `Installed` > `Lotus Ecarlate` > `Update` > `Download with dependencies`
+- `Installed` > taper `Lotus` en recherche > `Lotus Ecarlate` > `Update` > `Download with dependencies`
 
 Chaque mise à jour sera annoncée pour que vous soyez au courant 😉
 
