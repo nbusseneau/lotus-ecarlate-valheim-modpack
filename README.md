@@ -3,88 +3,46 @@
 Custom Thunderstore modpack for Lotus Écarlate's private Valheim server. Nothing
 to see here, move along citizen!
 
-## Installation
+## Première installation
 
 - Télécharger et installer [**r2modman** (lien cliquable)](https://thunderstore.io/c/valheim/p/ebkr/r2modman/). Instructions détaillées :
   - `Manual Download` > extraire zip > installer `r2modman Setup X.X.X.exe`
 - Lancer **r2modman** et sélectionner le jeu **Valheim**
   - `Valheim` > `Select game` > `Steam` > `Select platform`
-- Sélectionner le profil **Default** (ou en créer un nouveau)
-  - `Default` > `Select profile`
-- Installer le pack **Lotus Ecarlate**
+- Créer un nouveau profil vierge et le sélectionner (si vous venez d'installer **r2modman**, le profil **Default** suffira)
+  - `Create new` > taper un nom de profil > `Select profile`
+- Installer le pack **Lotus Ecarlate** (ignorer le mod **Lotus Ecarlate Changes**, c'est une sous-partie du pack)
   - `Online` > taper `Lotus` en recherche > `Lotus Ecarlate` > `Download` > `Download dependencies`
+  - **⚠️ Important : ne cliquez jamais sur la bannière `Update all`** qui s'affichera en haut de la liste des mods sur **r2modman** après installation du pack
+- Rajouter les options de lancement suivantes sur **Steam** :
+  - Clic droit sur `Valheim` dans la bibliothèque > `Propriétés` > `Options de lancement`
+  - Copier/coller `-gfx-enable-gfx-jobs -gfx-enable-native-gfx-jobs`
+- Télécharger le [**pack de configurations additionnelles** (lien cliquable)](https://github.com/nbusseneau/lotus-ecarlate-valheim-modpack/releases/latest/download/pack_configs_additionnelles.zip) puis l'installer :
+  - Accéder aux fichiers du profil depuis **r2modman** avec `Settings` > `Browse profile folder`
+  - Naviguer dans le dossier `BepInEx` > `config` et y extraire tous les fichiers `.cfg` du pack (écraser / remplacer en cas de conflit avec les fichiers existants)
+  - ⚠️ Tous les fichiers `.cfg` extraits doivent être dans `config`, pas dans un sous-dossier de `config`
 
 ## Lancer le jeu avec les mods
 
 Si vous lancez le jeu depuis Steam, les mods ne seront pas actifs.
 Il faut toujours lancer depuis **r2modman** :
 
-- `Valheim` > `Select game` > `Steam` > `Select platform` > `Default` > `Select profile` > `Start modded`
+- `Valheim` > `Select game` > `Steam` > `Select platform` > sélectionner le bon profil > `Select profile` > `Start modded`
 - Si vous avez tout bien fait, au lancement du jeu il y a une console qui s'ouvre, et sur le menu principal il y a un message en haut à gauche `Running BepInEx - X plugins loaded` 😉
 
-## Configuration
+Lors du premier lancement, modifier les raccourcis clavier suivants dans `Paramètres` > `Clavier et souris` :
 
-À faire une seule fois, lors de la première installation :
+- `S'asseoir` : changer de `X` vers `Y`
+- `Activer/Désactiver Marche` : changer de `Z` vers `U`
 
-### Paramètres de lancement Steam
-
-Afin d'optimiser les performances, rajouter les options de lancement suivantes sur **Steam** :
-
-- Clic droit sur `Valheim` dans la bibliothèque > `Propriétés` > `Options de lancement`
-- Copier/coller `-gfx-enable-gfx-jobs -gfx-enable-native-gfx-jobs`
-
-### Pack de configurations additionnelles
-
-Afin d'éviter que certaines de vos configurations locales (notamment raccourcis claviers) ne soient écrasées à chaque mise à jour du pack, une partie des configurations doit être installée manuellement :
-
-- Télécharger le [**pack de configurations additionnelles** (lien cliquable)](https://github.com/nbusseneau/lotus-ecarlate-valheim-modpack/releases/latest/download/pack_configs_additionnelles.zip)
-- Accéder aux fichiers du profil depuis **r2modman** avec `Settings` > `Browse profile folder`
-- Naviguer dans le dossier `BepInEx` > `config` et y extraire tous les fichiers `*.cfg` du pack (écraser / remplacer en cas de conflit avec les fichiers existants)
-
-⚠️ Tous les fichiers `*.cfg` doivent être dans `config`, pas dans un sous-dossier de `config` !
-
-### Raccourcis claviers
-
-Les mods rajoutent de nouveaux raccourcis claviers, et il y a un conflit avec les touches par défaut de Valheim.
-Modifier les paramètres raccourcis clavier suivants dans les paramètres du jeu :
-
-- `X`, qui est par défaut la touche utilisée pour s'asseoir (avec les mods, s'asseoir a désormais une vraie utilité, c'est pas que pour le style)
-  - Recommandé à la place : `Y`
-- `W`, qui est par défaut la touche utilisée pour passer en vitesse de marche (ça par contre ça n'a toujours aucune utilité)
-  - Recommandé à la place : `U`
-
-Plus tard, si vous souhaitez modifier des raccourcis claviers introduits par des mods, vous pourrez le faire en jeu depuis le menu accessible via `Échap` > `Mods settings` (ou `F1`), puis en activant uniquement le filtre `Keybinds`.
-
-### Sprint toggle
-
-Si vous voulez que la touche pour sprinter (`Shift`) fonctionne comme un toggle au lieu d'un maintien de touche, changer la configuration du mod `ValheimToggleMovementMod` depuis le menu accessible via `Échap` > `Mods settings` (ou `F1`), et activer `SprintToggle`.
-
-### Mods optionnels
-
-Ces mods ne sont pas intégrés au pack par défaut car ils sont pas forcément évidents à prendre en main, mais ils peuvent être intéressants pour faire des constructions plus avancées. Ces mods ne sont pas recommandés aux débutants ni à ceux qui n'ont pas l'intention de se concentrer sur les contructions.
-
-⚠️ Il faudra que vous preniez le temps de configurer les touches, car avec celles par défaut il y aura des conflits avec d'autres mods du pack. Des configurations avec touches compatibles sont disponibles [ici](https://github.com/nbusseneau/lotus-ecarlate-valheim-modpack/tree/main/optionalClientConfig/), à installer manuellement si vous souhaitez les essayer.
-
-- [Gizmo](https://thunderstore.io/c/valheim/p/ComfyMods/Gizmo/)
-  - Permet de faire tourner les pièces sur n'importe quel axe et avec n'importe quel incrément (alors que de base, c'est uniquement sur l'axe Y, par incréments de 45°).
-- [Extra Snap Points Made Easy](https://thunderstore.io/c/valheim/p/Searica/Extra_Snap_Points_Made_Easy/)
-  - Rajoute des points d'accroche supplémentaires sur les pièces, par exemple au centre d'un mur (de base : uniquement dans les coins) ou sur les coffres (de base : y en a pas, les coffres ne s'accrochent jamais)
-  - Permet d'accrocher les pièces sur les points d'accroche d'une pièce déjà posée (de base : seuls les points d'accroche de la pièce en cours de pose sont utilisables)
-  - Permet d'accrocher les pièces sur une grille virtuelle pour pouvoir tout aligner tout beau tout propre, avec maillage configurable
+(nécessaire pour éviter des conflits avec des raccourcis utilisés par des mods du pack)
 
 ## Mises à jour
 
-Lorsque des mises à jour sont disponibles, une bannière `Update all` s'affichera en haut de la liste des mods sur **r2modman** :
+### **⚠️ Ne cliquez jamais sur la bannière `Update all`** qui s'affichera en haut de la liste des mods sur **r2modman**, sinon vous risquez d'installer des versions incompatibles des mods.
 
-- **⚠️ Ne cliquez jamais sur la bannière `Update all`**
-- Si vous le faites alors que le serveur dédié n'a pas les versions correspondantes des mods, vous risquez de ne pas pouvoir rejoindre le serveur (ou pire : réussir à rejoindre mais avoir des truc pétés, et ça peut être traître et ne même pas forcément se voir immédiatement)
-
-Les seules mises à jour à effectuer sont celles du pack **Lotus Ecarlate** lui-même :
+Les seules mises à jour à faire sont celles du pack **Lotus Ecarlate** lui-même (il se chargera de mettre à jour les autres mods) :
 
 - `Installed` > taper `Lotus` en recherche > `Lotus Ecarlate` > `Update` > `Download with dependencies`
 
 Chaque mise à jour sera annoncée pour que vous soyez au courant 😉
-
-### Exception
-
-- Si vous avez installé des mods optionnels (comme indiqué ci-dessus), alors bien sûr vous pouvez les mettre à jour 😎
