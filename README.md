@@ -33,7 +33,7 @@ Il faut toujours lancer depuis **r2modman** :
 Lors du premier lancement, modifier les raccourcis clavier suivants dans `Paramètres` > `Clavier et souris` :
 
 - `S'asseoir` : changer de `X` vers `Y`
-- `Activer/Désactiver Marche` : changer de `W` vers `U`
+- `Activer/Désactiver Marche` : changer de `C` vers `U`
 
 (nécessaire pour éviter des conflits avec des raccourcis utilisés par des mods du pack)
 
