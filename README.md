@@ -3,7 +3,7 @@
 Custom Thunderstore modpack for Lotus Écarlate's private Valheim server. Nothing
 to see here, move along citizen!
 
-## Première installation
+## Installation
 
 - Télécharger et installer [**r2modman** (lien cliquable)](https://thunderstore.io/c/valheim/p/ebkr/r2modman/). Instructions détaillées :
   - `Manual Download` > extraire zip > installer `r2modman Setup X.X.X.exe`
@@ -33,7 +33,7 @@ Il faut toujours lancer depuis **r2modman** :
 Lors du premier lancement, modifier les raccourcis clavier suivants dans `Paramètres` > `Clavier et souris` :
 
 - `S'asseoir` : changer de `X` vers `Y`
-- `Activer/Désactiver Marche` : changer de `Z` vers `U`
+- `Activer/Désactiver Marche` : changer de `W` vers `U`
 
 (nécessaire pour éviter des conflits avec des raccourcis utilisés par des mods du pack)
 
