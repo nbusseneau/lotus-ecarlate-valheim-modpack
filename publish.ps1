@@ -91,3 +91,10 @@ $archive = (Get-ChildItem -Path $archivePath)
 $url = "https://uploads.github.com/repos/$repo/releases/$($release.id)/assets?name=$($archive.Name)"
 Write-Output "Uploading additional config archive to release | Asset name: $($archive.Name)"
 Invoke-RestMethod -Method POST -ContentType "application/zip" -Uri $url -Headers $headers -InFile $archive.FullName
+
+# Upload custom Toggle Movement Mod to GitHub release
+$customModPath = "build\GetOffMyLawn-ToggleMovementMod-1.2.0.zip"
+$customModArchive = (Get-ChildItem -Path $customModPath)
+$url = "https://uploads.github.com/repos/$repo/releases/$($release.id)/assets?name=$($customModArchive.Name)"
+Write-Output "Uploading custom Toggle Movement Mod archive to release | Asset name: $($customModArchive.Name)"
+Invoke-RestMethod -Method POST -ContentType "application/zip" -Uri $url -Headers $headers -InFile $customModArchive.FullName
