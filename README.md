@@ -14,8 +14,6 @@ to see here, move along citizen!
 - Installer le pack **Lotus Ecarlate** (ignorer le mod **Lotus Ecarlate Changes**, c'est une sous-partie du pack)
   - `Online` > taper `Lotus` en recherche > `Lotus Ecarlate` > `Download` > `Download dependencies`
   - **⚠️ Important : ne cliquez jamais sur la bannière `Update all`** qui s'affichera en haut de la liste des mods sur **r2modman** après installation du pack
-- Télécharger manuellement [**Toggle Movement Mod**(lien cliquable)](https://github.com/nbusseneau/lotus-ecarlate-valheim-modpack/releases/latest/download/GetOffMyLawn-ToggleMovementMod-1.2.0.zip) puis l'installer :
-  - Depuis **r2modman** > `Settings` > taper `import` en recherche > `Import local mod` > `Select file` > sélectionner le mod téléchargé > `Import local mod`
 - Télécharger le [**pack de configurations additionnelles** (lien cliquable)](https://github.com/nbusseneau/lotus-ecarlate-valheim-modpack/releases/latest/download/pack_configs_additionnelles.zip) puis l'installer :
   - Accéder aux fichiers du profil depuis **r2modman** avec `Settings` > `Browse profile folder`
   - Naviguer dans le dossier `BepInEx` > `config` et y extraire tous les fichiers `.cfg` du pack (écraser / remplacer en cas de conflit avec les fichiers existants)
@@ -39,7 +37,6 @@ Lors du premier lancement :
   - `S'asseoir` (`Sit`) : changer de `X` vers `Y`
 - Si vous souhaitez que le **Sprint (Shift)** soit un toggle et pas un maintien :
   - `F1` > trouver `Valheim - Toggle Movement Mod` et l'ouvrir > cocher `SprintToggle` (passe de `Disabled` à `Enabled`)
-  - `Paramètres` (`Settings`) > décocher `Course automatique` (`Auto-run`) > `OK` (sinon il y a conflit avec le toggle du jeu de base)
 
 ## Mises à jour
 
