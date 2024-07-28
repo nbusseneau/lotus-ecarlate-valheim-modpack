@@ -15,7 +15,7 @@ Backpack:
     Pickaxe: hidden
   crafting:
     station: Workbench
-    level: 5
+    level: 4
     costs:
       IronNails: 10
       Silver: 10
