@@ -1,5 +1,5 @@
 timezone: Europe/Paris
-interval: 900
+interval: 60
 jobs:
   # Generic cleanup: every day
   - command: clean_chests
@@ -33,7 +33,7 @@ jobs:
   - command: broadcast center <color=orange>REBOOT DU SERVEUR DANS 1 MINUTE - DÉCONNECTEZ-VOUS IMMÉDIATEMENT</color>
     schedule: "44 4 * * *"
   - command: save # actual reboot done via system cron
-    schedule: "45 4 * * *"
+    schedule: "44 4 * * *"
 
   # Resetting important things
   ## Around spawn: 25% every day (4 days rotation)
