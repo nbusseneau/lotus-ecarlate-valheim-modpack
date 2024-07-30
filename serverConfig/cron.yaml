@@ -35,43 +35,31 @@ jobs:
   - command: save # actual reboot done via system cron
     schedule: "44 4 * * *"
 
-  # Resetting important things
-  ## Around spawn: 25% every day (4 days rotation)
-  - command: chests_reset looted chance=25 pos=0,0 min=30 max=1000
-    schedule: "15 5 * * *"
-  - command: vegetation_reset rock4_copper,mudpile_beacon terrain=30 chance=25 pos=0,0 min=30 max=1000
-    schedule: "15 5 * * *"
-  - command: vegetation_reset MineRock_Tin,Pickable_SeedTurnip,Pickable_SeedCarrot,BFP_Pickable_Clay,BFP_Pickable_ClayBig terrain=2 chance=25 pos=0,0 min=30 max=1000
-    schedule: "15 5 * * *"
-  - command: vegetation_reset silvervein terrain=50 chance=25 pos=0,0 min=30 max=1000
-    schedule: "15 5 * * *"
-  - command: vegetation_reset Leviathan chance=25 pos=0,0 min=30 max=1000
-    schedule: "15 5 * * *"
-  - command: locations_reset chance=25 pos=0,0 min=30 max=1000
-    schedule: "15 5 * * *"
-
-  ## Further away from spawn: 5% every day (20 days rotation)
-  - command: chests_reset looted chance=5 pos=0,0 min=1000
-    schedule: "15 5 * * *"
-  - command: vegetation_reset rock4_copper,mudpile_beacon terrain=30 chance=5 pos=0,0 min=1000
-    schedule: "15 5 * * *"
-  - command: vegetation_reset MineRock_Tin,Pickable_SeedTurnip,Pickable_SeedCarrot,BFP_Pickable_Clay,BFP_Pickable_ClayBig terrain=2 chance=5 pos=0,0 min=1000
-    schedule: "15 5 * * *"
-  - command: vegetation_reset silvervein terrain=50 chance=5 pos=0,0 min=1000
-    schedule: "15 5 * * *"
-  - command: vegetation_reset Leviathan chance=5 pos=0,0 min=1000
-    schedule: "15 5 * * *"
-  - command: locations_reset chance=5 pos=0,0 min=1000
-    schedule: "15 5 * * *"
-
-  ## Hildir dungeons: every Monday
-  - command: locations_reset Hildir_crypt,Hildir_cave,Hildir_plainsfortress
+  # Resetting Hildir dungeons: every Monday, forced even if player structures nearby
+  - command: locations_reset Hildir_crypt,Hildir_cave,Hildir_plainsfortress force start
     schedule: "15 5 * * 1"
 
-  ## Execute
-  - command: start
-    schedule: "16 5 * * *"
-zone: []
+zone:
+  # Resetting important things: 5% every day (20 days rotation)
+  - command: chests_reset looted chance=5 zone=<i>,<j> start
+    schedule: "15 5 * * *"
+    avoidPlayers: true
+  - command: vegetation_reset rock4_copper,mudpile_beacon terrain=30 chance=5 zone=<i>,<j> start
+    schedule: "15 5 * * *"
+    avoidPlayers: true
+  - command: vegetation_reset MineRock_Tin,Pickable_SeedTurnip,Pickable_SeedCarrot,BFP_Pickable_Clay,BFP_Pickable_ClayBig terrain=2 chance=5 zone=<i>,<j> start
+    schedule: "15 5 * * *"
+    avoidPlayers: true
+  - command: vegetation_reset silvervein terrain=50 chance=5 zone=<i>,<j> start
+    schedule: "15 5 * * *"
+    avoidPlayers: true
+  - command: vegetation_reset Leviathan chance=5 zone=<i>,<j> start
+    schedule: "15 5 * * *"
+    avoidPlayers: true
+  - command: locations_reset chance=5 zone=<i>,<j> start
+    schedule: "15 5 * * *"
+    avoidPlayers: true
+
 join: []
 logJobs: true
 logZone: true
