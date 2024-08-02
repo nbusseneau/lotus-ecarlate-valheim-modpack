@@ -20,7 +20,7 @@ jobs:
     schedule: "30 4 * * *"
   - command: broadcast center <color=orange>REBOOT DU SERVEUR DANS 10 MINUTES</color>
     schedule: "35 4 * * *"
-  - command: save # early save just in case
+  - command: save # early saves just in case
     schedule: "40 4 * * *"
   - command: broadcast center <color=orange>REBOOT DU SERVEUR DANS 5 MINUTES - DÉCONNECTEZ-VOUS BIENTÔT</color>
     schedule: "40 4 * * *"
@@ -29,6 +29,8 @@ jobs:
   - command: broadcast center <color=orange>REBOOT DU SERVEUR DANS 3 MINUTES - DÉCONNECTEZ-VOUS BIENTÔT</color>
     schedule: "42 4 * * *"
   - command: broadcast center <color=orange>REBOOT DU SERVEUR DANS 2 MINUTES - DÉCONNECTEZ-VOUS IMMÉDIATEMENT</color>
+    schedule: "43 4 * * *"
+  - command: save # early saves just in case
     schedule: "43 4 * * *"
   - command: broadcast center <color=orange>REBOOT DU SERVEUR DANS 1 MINUTE - DÉCONNECTEZ-VOUS IMMÉDIATEMENT</color>
     schedule: "44 4 * * *"
