@@ -37,31 +37,24 @@ jobs:
   - command: save # actual reboot done via system cron
     schedule: "44 4 * * *"
 
-  # Resetting Hildir dungeons: every Monday, forced even if player structures nearby
-  - command: locations_reset Hildir_crypt,Hildir_cave,Hildir_plainsfortress force start
+  # Resetting Hildir and Dyrnwyn locations: every Monday, forced even if player structures nearby
+  - command: locations_reset Hildir_crypt,Hildir_cave,Hildir_plainsfortress,PlaceofMystery1,PlaceofMystery2,PlaceofMystery3 force start
     schedule: "15 5 * * 1"
 
-zone:
   # Resetting important things: 5% every day (20 days rotation)
-  - command: chests_reset looted chance=5 zone=<i>,<j> start
+  - command: locations_reset chance=5 pos=0,0 min=30 # distance safeguard for start temple
     schedule: "15 5 * * *"
-    avoidPlayers: true
-  - command: vegetation_reset rock4_copper,mudpile_beacon terrain=30 chance=5 zone=<i>,<j> start
+  - command: vegetation_reset rock4_copper terrain=30 chance=5
     schedule: "15 5 * * *"
-    avoidPlayers: true
-  - command: vegetation_reset MineRock_Tin,Pickable_SeedTurnip,Pickable_SeedCarrot,BFP_Pickable_Clay,BFP_Pickable_ClayBig terrain=2 chance=5 zone=<i>,<j> start
+  - command: vegetation_reset MineRock_Tin terrain=2 chance=5
     schedule: "15 5 * * *"
-    avoidPlayers: true
-  - command: vegetation_reset silvervein terrain=50 chance=5 zone=<i>,<j> start
+  - command: vegetation_reset silvervein terrain=50 chance=5
     schedule: "15 5 * * *"
-    avoidPlayers: true
-  - command: vegetation_reset Leviathan chance=5 zone=<i>,<j> start
+  - command: vegetation_reset Leviathan,Pickable_SeedCarrot,Pickable_SeedTurnip chance=5
     schedule: "15 5 * * *"
-    avoidPlayers: true
-  - command: locations_reset chance=5 zone=<i>,<j> start
-    schedule: "15 5 * * *"
-    avoidPlayers: true
-
+  - command: start
+    schedule: "16 5 * * *"
+zone: []
 join: []
 logJobs: true
 logZone: true
