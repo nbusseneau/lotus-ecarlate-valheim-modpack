@@ -30,15 +30,20 @@ Il faut toujours lancer depuis **r2modman** :
 - `Valheim` > `Select game` > `Steam` > `Select platform` > sélectionner le bon profil > `Select profile` > `Start modded`
 - Si vous avez tout bien fait, au lancement du jeu il y a une console qui s'ouvre, et sur le menu principal il y a un message en haut à gauche `Running BepInEx - X plugins loaded` 😉
 
-Lors du premier lancement :
+Lors du premier lancement, modifier les paramètres suivants depuis `Settings` (`Paramètres`) :
 
-- Modifier les raccourcis clavier suivants dans `Paramètres` (`Settings`) > `Clavier et souris` (`Keyboard & Mouse`) pour éviter des conflits avec des raccourcis utilisés par des mods du pack :
-  - `Activer/Désactiver Marche` (`Toggle walk`) : changer de `C` vers `U`
-  - `S'asseoir` (`Sit`) : changer de `X` vers `Y`
-- Modifier les raccourcis clavier pour les emplacements d'inventaire supplémentaires :
-  - `F1` > `Extra Slots` > `Hotkeys` > ajuster `Ammo`, `Food`, et `Quickslots` (raccourci + texte affiché dans l'inventaire)
+- Il est fortement conseillé de mettre le jeu en anglais dans l'onglet `Gameplay`. C'est jouable en français si vous y tenez, mais une partie des mods n'est pas traduite et de toutes façons la traduction du jeu de base est plutôt nulle, donc ça casse un peu l'expérience.
+- Modifier les raccourcis clavier suivants dans `Keyboard & Mouse` (`Clavier et souris`) pour éviter des conflits avec des raccourcis utilisés par des mods du pack :
+  - `Toggle walk` (`Activer/Désactiver Marche`) : changer de `C` vers `U`
+  - `Sit` (`S'asseoir`) : changer de `X` vers `Y`
+
+Autres paramètres probablement importants à bidouiller (mais pas forcément dès le premier lancement) :
+
 - Si vous souhaitez que le **Sprint (Shift)** soit un toggle et pas un maintien :
-  - `F1` > `Valheim - Toggle Movement Mod` > `Sprint` > cocher `SprintToggle` (passe de `Disabled` à `Enabled`)
+  - `Settings` (`Paramètres`) > `Accessibility` (`Accessibilité`) > `Auto-run` (`Course automatique`). Non, ce label n'a aucun sens 🙄
+- Si vous souhaitez modifier les raccourcis clavier pour les emplacements d'inventaire supplémentaires :
+  - `F1` > `Extra Slots` > `Hotkeys` > ajuster `Ammo`, `Food`, et `Quickslots` (1 à 3, les slots 4 à 6 ne sont pas actifs)
+  - N'oubliez pas de modifier également le texte affiché dans l'inventaire, en plus du raccourci clavier.
 
 ## Mises à jour
 
