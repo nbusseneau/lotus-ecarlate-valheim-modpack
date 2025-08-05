@@ -35,8 +35,10 @@ Lors du premier lancement :
 - Modifier les raccourcis clavier suivants dans `Paramètres` (`Settings`) > `Clavier et souris` (`Keyboard & Mouse`) pour éviter des conflits avec des raccourcis utilisés par des mods du pack :
   - `Activer/Désactiver Marche` (`Toggle walk`) : changer de `C` vers `U`
   - `S'asseoir` (`Sit`) : changer de `X` vers `Y`
+- Modifier les raccourcis clavier pour les emplacements d'inventaire supplémentaires :
+  - `F1` > `Extra Slots` > `Hotkeys` > ajuster `Ammo`, `Food`, et `Quickslots` (raccourci + texte affiché dans l'inventaire)
 - Si vous souhaitez que le **Sprint (Shift)** soit un toggle et pas un maintien :
-  - `F1` > trouver `Valheim - Toggle Movement Mod` et l'ouvrir > cocher `SprintToggle` (passe de `Disabled` à `Enabled`)
+  - `F1` > `Valheim - Toggle Movement Mod` > `Sprint` > cocher `SprintToggle` (passe de `Disabled` à `Enabled`)
 
 ## Mises à jour
 

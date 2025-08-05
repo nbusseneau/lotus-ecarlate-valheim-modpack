@@ -1,5 +1,0 @@
-# Remove Renegade Vikings spawns after 10 mins
-- prefab: BLV_TraderViking,BLV_NeutralVikings,BLV_RenegadeViking*,BLV_OverlordViking*
-  type: create
-  remove: true
-  removeDelay: 600
