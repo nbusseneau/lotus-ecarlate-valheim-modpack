@@ -42,7 +42,7 @@ jobs:
     schedule: "15 5 * * 1"
 
   # Resetting important things: 5% locations every day (20 days rotation), 20% of one type of vegetation every 4 days (20 days rotation)
-  - command: locations_reset chance=5 pos=-257,-4 min=30 # distance safeguard for start temple, use `find StartTemple` to get position
+  - command: locations_reset chance=5 pos=129,-191 min=30 # distance safeguard for start temple, use `find StartTemple` to get position
     schedule: "15 5 * * *"
   - command: vegetation_reset rock4_copper terrain=30 chance=20
     schedule: "15 5 * * 1/4"
