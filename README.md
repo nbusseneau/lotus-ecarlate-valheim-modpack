@@ -8,7 +8,7 @@ to see here, move along citizen!
 - Télécharger et installer [**r2modman** (lien cliquable)](https://thunderstore.io/c/valheim/p/ebkr/r2modman/). Instructions détaillées :
   - `Manual Download` > extraire zip > installer `r2modman Setup X.Y.Z.exe`
 - Lancer **r2modman** et sélectionner le jeu **Valheim**
-  - `Valheim` > `Select game` > `Steam` > `Select platform`
+  - `Valheim` > passer le jeu en favori en cliquant sur la petite étoile > `Select game` > `Steam` > `Select platform`
 - Créer un nouveau profil vierge et le sélectionner (ou utiliser le profil **Default** s'il est vierge)
   - `Create new` > taper un nom de profil > `Select profile`
 - Installer le pack **Lotus Ecarlate** (ignorer le mod **Lotus Ecarlate Changes**, c'est une sous-partie du pack)
