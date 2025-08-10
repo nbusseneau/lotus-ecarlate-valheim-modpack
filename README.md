@@ -5,17 +5,17 @@ to see here, move along citizen!
 
 ## Installation
 
-- Télécharger et installer [**Gale** (lien cliquable)](https://kesomannen.com/gale). Instructions détaillées :
-  - `Download` > `.msi installer` > installer `Gale_X.Y.Z_x64_en-US.msi`
-- Lancer **Gale** et sélectionner le jeu **Valheim**
-- Si vous aviez déjà **r2modman**, **Gale** vous proposera d'importer vos profils : si vous voulez migrer sur **Gale** (cémieux que **r2modman**), allez-y, mais pour le serveur il faudra utiliser un profil vierge de toutes façons.
-- Créer un nouveau profil vierge (ou utiliser le profil **Default** s'il est vierge)
-  - `Profile` > `Create new profile` > taper un nom de profil > `Create`
+- Télécharger et installer [**r2modman** (lien cliquable)](https://thunderstore.io/c/valheim/p/ebkr/r2modman/). Instructions détaillées :
+  - `Manual Download` > extraire zip > installer `r2modman Setup X.Y.Z.exe`
+- Lancer **r2modman** et sélectionner le jeu **Valheim**
+  - `Valheim` > `Select game` > `Steam` > `Select platform`
+- Créer un nouveau profil vierge et le sélectionner (ou utiliser le profil **Default** s'il est vierge)
+  - `Create new` > taper un nom de profil > `Select profile`
 - Installer le pack **Lotus Ecarlate** (ignorer le mod **Lotus Ecarlate Changes**, c'est une sous-partie du pack)
-  - 2e onglet sur la gauche > taper `Lotus` en recherche > `Lotus Ecarlate` > `Install`
-  - **⚠️ Important : ne jamais cliquer sur la bannière `Update all`** qui s'affichera en haut de la liste des mods (1er onglet) après installation du pack
+  - `Online` > taper `Lotus` en recherche > `Lotus Ecarlate` > `Download` > `Download dependencies`
+  - **⚠️ Important : ne jamais cliquer sur la bannière `Update all`** qui s'affichera en haut de la liste des mods (onglet `Installed`), sinon vous risquez d'installer des versions incompatibles des mods.
 - Télécharger le [**pack de configurations additionnelles** (lien cliquable)](https://github.com/nbusseneau/lotus-ecarlate-valheim-modpack/releases/latest/download/pack_configs_additionnelles.zip) puis l'installer :
-  - Accéder aux fichiers du profil depuis **Gale** avec `File` > `Open profile folder`
+  - Accéder aux fichiers du profil depuis **r2modman** avec `Settings` > `Browse profile folder`
   - Naviguer dans le dossier `BepInEx` > `config` et y extraire tous les fichiers `.cfg` du pack (écraser / remplacer en cas de conflit avec les fichiers existants)
   - ⚠️ Tous les fichiers `.cfg` extraits doivent être dans `config`, pas dans un sous-dossier de `config`
 - Rajouter les options de lancement suivantes sur **Steam** :
@@ -26,7 +26,8 @@ to see here, move along citizen!
 
 Si vous lancez le jeu depuis Steam, les mods ne seront pas actifs :
 
-- Il faut toujours lancer depuis **Gale** avec le bouton `Launch game` en haut à gauche (assurez-vous de sélectionner le bon profil si vous en avez plusieurs).
+- Il faut toujours lancer depuis **r2modman** avec le bouton `Start modded` en haut à gauche :
+  - `Valheim` > `Select game` > `Steam` > `Select platform` > sélectionner le bon profil > `Select profile` > `Start modded`
 - Si vous avez tout bien fait, au lancement du jeu il y a une console qui s'ouvre, et sur l'écran principal il y a un nouveau menu `Mods settings` en plus d'un message en bas à droite `You are playing a modded version of Valheim` 😉
 
 Lors du premier lancement, modifier les paramètres suivants dans `Settings` (`Paramètres`) :
@@ -46,10 +47,8 @@ Autres paramètres probablement importants à bidouiller (pas forcément dès le
 
 ## Mises à jour
 
-### **⚠️ Ne jamais cliquer sur la bannière `Update all`** qui s'affichera en haut de la liste des mods (1er onglet), sinon vous risquez d'installer des versions incompatibles des mods.
+### **⚠️ Ne jamais cliquer sur la bannière `Update all`** qui s'affichera en haut de la liste des mods (onglet `Installed`), sinon vous risquez d'installer des versions incompatibles des mods.
 
-Les seules mises à jour à faire sont celles du pack **Lotus Ecarlate** lui-même :
+Les seules mises à jour à faire seront annoncées sur Discord, et sont celles du pack **Lotus Ecarlate** lui-même :
 
-- 1er onglet sur la gauche > taper `Lotus` en recherche > `Lotus Ecarlate` > `Update`
-
-Les mises à jour seront annoncées sur Discord 😉
+- `Installed` > taper `Lotus` en recherche > `Lotus Ecarlate` > `Update` > `Download with dependencies`
