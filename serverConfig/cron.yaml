@@ -41,8 +41,11 @@ jobs:
   - command: locations_reset Hildir_crypt,Hildir_cave,Hildir_plainsfortress,PlaceofMystery1,PlaceofMystery2,PlaceofMystery3 force start
     schedule: "15 5 * * 1"
 
+  # Resetting inner ring around spawn things: 25% locations every day (5 days rotation)
+  - command: locations_reset chance=25 pos=129,-191 min=30 max=1000 # distance safeguard for start temple, use `find StartTemple` to get position
+    schedule: "15 5 * * *"
   # Resetting important things: 5% locations every day (20 days rotation), 20% of one type of vegetation every 4 days (20 days rotation)
-  - command: locations_reset chance=5 pos=129,-191 min=30 # distance safeguard for start temple, use `find StartTemple` to get position
+  - command: locations_reset chance=5 pos=129,-191 min=1000
     schedule: "15 5 * * *"
   - command: vegetation_reset rock4_copper terrain=30 chance=20
     schedule: "15 5 * * 1/4"
