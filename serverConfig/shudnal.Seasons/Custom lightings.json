@@ -77,7 +77,7 @@
       "fogDensityMultiplier": 1.1
     },
     "morning": {
-      "luminanceMultiplier": 0.7,
+      "luminanceMultiplier": 0.725,
       "fogDensityMultiplier": 1.2
     },
     "day": {
@@ -85,11 +85,11 @@
       "fogDensityMultiplier": 1.0
     },
     "evening": {
-      "luminanceMultiplier": 0.7,
+      "luminanceMultiplier": 0.725,
       "fogDensityMultiplier": 1.2
     },
     "night": {
-      "luminanceMultiplier": 0.4,
+      "luminanceMultiplier": 0.45,
       "fogDensityMultiplier": 1.7
     },
     "lightIntensityDayMultiplier": 1.0,
